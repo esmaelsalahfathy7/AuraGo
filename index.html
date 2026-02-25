@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AuraGo</title>
+    <link rel="stylesheet" href="CSS/commonStyles.css" />
     <link rel="stylesheet" href="CSS/homePage.css" />
     <link rel="stylesheet" href="CSS/Normalize.css" />
     <link
@@ -20,23 +21,23 @@
   <body>
     <header>
       <div class="container">
+        <div class="logo">
+          <a href="#">AuraGo</a>
+        </div>
         <nav>
-          <div class="logo">
-            <a href="#">AuraGo</a>
-          </div>
           <ul>
-            <li><a href="#">Destination</a></li>
-            <li><a href="#">Experiance</a></li>
-            <li><a href="#">Packages</a></li>
-            <li><a href="#">about</a></li>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#destinations">Destination</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div>
-          <div class="search">
-            <i class="fas fa-search"></i>
-            <input placeholder="Search" />
-          </div>
-          <button class="custom-btn">Book Now</button>
+          <button class="custom-btn orange">
+            <a href="Pages/login.html">LogIn</a>
+          </button>
         </div>
       </div>
     </header>
@@ -56,16 +57,308 @@
             world's most vibrant landscapes through a lens of pure energy.
           </p>
           <div class="btns">
-            <button class="journy custom-btn">Start You Journy</button>
+            <button class="journy custom-btn skyblue">
+              <a href="Pages/join.html">Start You Journy</a>
+            </button>
             <button class="experience custom-btn">
               <i class="fa-solid fa-circle-play"></i> View Experiance
             </button>
           </div>
         </div>
-        <div class="mouse">
-          
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section class="stats section-padding dark-bg">
+      <div class="container">
+        <div class="stat">
+          <h2>500+</h2>
+          <p>Destinations</p>
+        </div>
+        <div class="stat">
+          <h2>120k</h2>
+          <p>Travelers</p>
+        </div>
+        <div class="stat">
+          <h2>4.9/5</h2>
+          <p>Avg Rating</p>
+        </div>
+        <div class="stat">
+          <h2>24/7</h2>
+          <p>Concierge</p>
         </div>
       </div>
     </section>
+    <section id="destinations" class="destinations section-padding light-bg">
+      <div class="container">
+        <div class="special-heading">
+          <div>
+            <span>Curated Collections</span>
+            <h1>Top Destinations</h1>
+          </div>
+          <button class="custom-btn skyblue">
+            <a href="./Pages/destinations.html"> View All Destinations </a>
+          </button>
+        </div>
+        <div class="content">
+          <div class="card popular">
+            <img src="Assets/temple.jpg" alt="Tokyo" />
+            <div class="card-info">
+              <span>Egypt</span>
+              <h4>Pharaoh’s Silence</h4>
+              <div>
+                <span><i class="fa-regular fa-clock"></i> 5 Days</span>
+                <span><i class="fa-solid fa-money-bills"></i> From $3,200</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="Assets/moroco.jpg" alt="Tokyo" />
+            <div class="card-info">
+              <span>Morocco</span>
+              <h4>Ancient Courtyard</h4>
+              <div>
+                <span><i class="fa-regular fa-clock"></i> 7 Days</span>
+                <span><i class="fa-solid fa-money-bills"></i> From $2,450</span>
+              </div>
+            </div>
+          </div>
+          <div class="card new">
+            <img src="Assets/lebanon.jpg" alt="Tokyo" />
+            <div class="card-info">
+              <span>Lebanon</span>
+              <h4>Tripoli Stone</h4>
+              <div>
+                <span><i class="fa-regular fa-clock"></i> 4 Days</span>
+                <span><i class="fa-solid fa-money-bills"></i> From $850</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tours" class="tours section-padding dark-bg">
+      <div class="container">
+        <div class="special-heading">
+          <div>
+            <span>Guided Adventures</span>
+            <h1>Signature Tours</h1>
+          </div>
+          <button class="custom-btn skyblue">
+            <a href="Pages/tours.html"> View All Tours </a>
+          </button>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="image">
+              <img src="Assets/tour-1.png" alt="" />
+            </div>
+            <div class="card-info">
+              <h3>Electric Alp Expedition</h3>
+              <p>
+                A high-altitude journey through the glowing peaks of the Swiss
+                Alps.
+              </p>
+              <div>
+                <span>12 DAYS </span>
+                <span>$4,200 PP</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="Assets/tour-2.png" alt="" />
+            </div>
+            <div class="card-info">
+              <h3>Cyberpunk Tokyo Tour</h3>
+              <p>
+                Navigate the most neon-saturated districts with expert local
+                guides.
+              </p>
+              <div>
+                <span>7 DAYS </span>
+                <span>$2,800 PP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blogs" class="blogs section-padding light-bg">
+      <div class="container">
+        <div class="special-heading">
+          <div>
+            <span>Insider Stories </span>
+            <h1>Travel Blog</h1>
+          </div>
+          <button class="custom-btn skyblue">
+            <a href="Pages/blogs.html"> View All Posts </a>
+          </button>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="image">
+              <img src="Assets/blog-1.jpg" alt="" />
+            </div>
+            <div class="card-info">
+              <h4>Photography</h4>
+              <p>How to capture Egyptian nights</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="Assets/blog-2.jpg" alt="" />
+            </div>
+            <div class="card-info">
+              <h4>Guide</h4>
+              <p>Hidden Sahara gems revealed</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="Assets/blog-3.png" alt="" />
+            </div>
+            <div class="card-info">
+              <h4>Lifestyle</h4>
+              <p>The modern digital nomad</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="Assets/blog-4.jpg" alt="" />
+            </div>
+            <div class="card-info">
+              <h4>Gear</h4>
+              <p>Best kits for 2024 travel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="activities section-padding dark-bg">
+      <div class="container">
+        <h1>Choose You Vibe</h1>
+        <div class="cards">
+          <div class="card">
+            <i class="fas fa-solid fa-person-walking-luggage"></i>
+            <h4>Adventure</h4>
+            <p>Push your limits</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-regular fa-gem"></i>
+            <h4>Luxury</h4>
+            <p>Pure indulgence</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-solid fa-city"></i>
+            <h4>City Glow</h4>
+            <p>Urban heartbeat</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-camera"></i>
+            <h4>Vibrant Art</h4>
+            <p>Culture & colors</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about section-padding light-bg">
+      <div class="container">
+        <div class="image"><img src="Assets/tour-1.png" alt="" /></div>
+        <div class="info">
+          <span>Our Philosophy</span>
+          <h2>Redefining the Vibrant Path</h2>
+          <p>
+            AuraGo was founded on the idea that travel should be high-fidelity.
+            We don't just visit places; we immerse you in the energetic pulse of
+            the world's most vivid destinations. Our missions are curated for
+            those who seek the extraordinary.
+          </p>
+          <button class="custom-btn skyblue">Learn More About Us</button>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact section-padding dark-bg">
+      <div class="container">
+        <div>
+          <img
+            src="Assets/join-us.jpg"
+            alt="Man Standing On A Bridge, Looking At A Nature View"
+          />
+          <div class="content">
+            <h1>Contact the Experts</h1>
+            <p>
+              Have questions? Join <span>50k+ travelers</span> getting exclusive
+              access to hidden neon spots across the globe.
+            </p>
+            <div class="btns">
+              <button type="submit" class="custom-btn skyblue">
+                <a href="Pages/contact.html"> Contact US </a>
+              </button>
+              <button type="submit" class="custom-btn orange">
+                <a href="Pages/signup.html"> Join Now </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="light-bg">
+      <div class="container">
+        <div class="content">
+          <div class="col about">
+            <h2>AuraGo</h2>
+            <p>
+              Redefining modern travel with curated high-energy experiences.
+              From the neon streets of Shinjuku to the golden glow of the
+              Sahara.
+            </p>
+          </div>
+          <div class="col quick-links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="Pages/destinations.html">Find a Trip</a></li>
+              <li><a href="Pages/tours.html">Our Tours</a></li>
+              <li><a href="Pages/blogs.html">Travel Blog</a></li>
+              <li><a href="Pages/contact.html">Support</a></li>
+            </ul>
+          </div>
+          <div class="col social-media">
+            <h2>Social</h2>
+            <ul>
+              <li><a href="https://www.instagram.com">Instagram</a></li>
+              <li><a href="https://www.tiktok.com">TikTok</a></li>
+              <li><a href="https://www.toutube.com">YouTube</a></li>
+              <li><a href="https://www.x.com">Twitter-X</a></li>
+            </ul>
+          </div>
+          <div class="col newsletter">
+            <h2>Newsletter</h2>
+            <p>Get travel tips and inspo straight to your inbox.</p>
+            <div>
+              <input type="text" />
+              <button class="custom-btn orange">
+                <i class="fas fa-solid fa-arrow-right-from-bracket"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div>&copy; 2026 <span>AuraGo Co.</span> All rights reserved.</div>
+          <div>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script>
+    let links = document.querySelector("header .container ul");
+    links.addEventListener("click", (e) => {
+      links.querySelectorAll("a").forEach((link) => {
+        link.classList.remove("active");
+      });
+      e.target.classList.add("active");
+    });
+  </script>
 </html>
