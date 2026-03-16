@@ -102,8 +102,48 @@
   letter-spacing: 2px;
 }
 
+.content .container .has-account div {
+  color: white;
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .container .has-account div p {
+  margin: 10px 0;
+}
+
+.content .container .has-account div span {
+  flex: 1;
+  height: 1px;
+  background-color: #4c506d85;
+}
+
+.content .container .has-account div a {
+  background-color: #4c506d85;
+  padding: 20px;
+  flex: 1;
+  transition: 0.3s;
+}
+
+.content .container .has-account div a:hover {
+  background-color: #4c506d;
+}
+
+.content .container .has-account .links a i {
+  transition: 0.3s;
+}
+
+.content .container .has-account .links a:hover i.google {
+  color: #ea4335;
+}
+.content .container .has-account .links a:hover i.facebook {
+  color: #1877f2;
+}
+
 .content .container .signup {
-  padding-top: 30px;
   text-align: center;
   font-size: 14px;
   color: var(--text-color);

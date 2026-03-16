@@ -1,6 +1,5 @@
 main {
-  /* --border-color: #49260c; */
-  --border-color: var(--dark-orange-color);
+  --border-color: #522301;
   border-bottom: 1px solid var(--border-color);
 }
 

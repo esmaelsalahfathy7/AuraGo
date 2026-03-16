@@ -36,9 +36,7 @@
           </ul>
         </nav>
         <div>
-          <button class="custom-btn orange">
-            <a href="./signup.html">Register</a>
-          </button>
+          <a class="custom-btn orange" href="./signup.html">Register</a>
         </div>
       </div>
     </header>
@@ -47,14 +45,14 @@
       <div class="container">
         <h1>Member Login</h1>
         <p>Secure access to the travel network</p>
-        <form action="" method="post">
+        <form>
           <div>
             <p>UserName</p>
-            <input type="text" />
+            <input type="text" placeholder="abc@example.com" />
           </div>
           <div>
             <p>Password <a href="">Forget? </a></p>
-            <input type="password" />
+            <input placeholder="••••••••" type="password" />
           </div>
           <label>
             <input type="checkbox" name="remember" />
@@ -64,6 +62,21 @@
             Initialize Login
           </button>
         </form>
+        <div class="has-account">
+          <div>
+            <span></span>
+            <p>Or Continue With</p>
+            <span></span>
+          </div>
+          <div class="links">
+            <a class="custom-btn" href=""
+              ><i class="fa-brands fa-google google"></i> Google</a
+            >
+            <a class="custom-btn" href=""
+              ><i class="fa-brands fa-facebook-f facebook"></i> FaceBook</a
+            >
+          </div>
+        </div>
         <div class="signup">
           Don`t Have An Account? <a href="./signup.html"> Join Network</a>
         </div>
