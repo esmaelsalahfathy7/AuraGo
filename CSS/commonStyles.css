@@ -6,11 +6,10 @@
 
 :root {
   --main-color: #cc5500;
-  --dark-orange-color: #813701;
+  --dark-orange-color: #522301;
   --secandary-color: #00e5ff;
   --text-color: #94a3b8;
-  --bg-color-1: #1c0c00;
-  --bg-color-2: #0f0600;
+  --bg-primary: rgb(204 85 0 / 0.05);
 }
 
 html {
@@ -19,7 +18,7 @@ html {
 
 body {
   font-family: "Work Sans", sans-serif;
-  background-color: black;
+  background-color: #23170f;
 }
 
 ul {
@@ -32,11 +31,8 @@ a {
   text-decoration: none;
 }
 
-.dark-bg {
-  background-color: var(--bg-color-2);
-}
-.light-bg {
-  background-color: var(--bg-color-1);
+.bg-brimary {
+  background-color: var(--bg-primary);
 }
 
 .section-padding {
@@ -82,6 +78,7 @@ a {
 .special-heading {
   display: flex;
   justify-content: space-between;
+  align-items: end;
   margin-bottom: 25px;
 }
 
@@ -136,9 +133,6 @@ a {
   box-shadow: 0 0 7px var(--main-color);
   font-weight: 500;
 }
-.orange a {
-  color: white;
-}
 
 .orange:hover {
   background-color: var(--dark-orange-color);
@@ -153,10 +147,6 @@ a {
 
 .skyblue:hover {
   transform: scale(1.08);
-}
-
-.skyblue a {
-  color: black;
 }
 
 /* --Buttons-- */

@@ -494,8 +494,10 @@
   color: var(--text-color);
 }
 
-.about .container div button {
+.about .container div a {
   padding: 20px 40px;
+  display: block;
+  width: fit-content;
 }
 
 /* --About-- */
@@ -561,7 +563,7 @@
   border-color: var(--main-color);
 }
 
-.contact .container .btns button {
+.contact .container .btns a {
   padding: 20px;
   flex: 1;
 }

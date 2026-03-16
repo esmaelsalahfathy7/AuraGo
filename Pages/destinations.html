@@ -36,13 +36,168 @@
           </ul>
         </nav>
         <div>
-          <button class="custom-btn orange">
-            <a href="./login.html">LogIn</a>
-          </button>
+          <a class="custom-btn orange" href="./login.html">LogIn</a>
         </div>
       </div>
     </header>
-
+    <!-- Page Content -->
+    <main>
+      <div class="container">
+        <div class="head">
+          <div class="title">
+            <h2>Explore <span>Destinations</span></h2>
+            <p>
+              Find your next neon-lit escape. From cyber-hubs to high-tech
+              metropolises, the future of travel starts here.
+            </p>
+          </div>
+          <button class="custom-btn">Filter</button>
+        </div>
+        <div class="filter">
+          <button class="custom-btn orange active">All Regions</button>
+          <button class="custom-btn">Asia</button>
+          <button class="custom-btn">Europe</button>
+          <button class="custom-btn">Americas</button>
+          <button class="custom-btn">Africa</button>
+        </div>
+        <div class="content">
+          <div class="cards">
+            <div class="card">
+              <div class="image">
+                <img src="../Assets/destination1.png" alt="" />
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="card-info">
+                <h3>
+                  Tokyo, Japan
+                  <span><i class="fa-regular fa-star"></i> 4.9</span>
+                </h3>
+                <p>The Global Neon Capital</p>
+              </div>
+              <button class="custom-btn skyblue">
+                Explore <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="../Assets/destination2.png" alt="" />
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="card-info">
+                <h3>
+                  Seoul, S. Korea
+                  <span><i class="fa-regular fa-star"></i> 4.9</span>
+                </h3>
+                <p>Cyberpunk Tech Hub</p>
+              </div>
+              <button class="custom-btn skyblue">
+                Explore <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="../Assets/destination3.png" alt="" />
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="card-info">
+                <h3>
+                  Reykjavik, Iceland
+                  <span><i class="fa-regular fa-star"></i> 4.7</span>
+                </h3>
+                <p>Nature's Own Neon Show</p>
+              </div>
+              <button class="custom-btn skyblue">
+                Explore <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="../Assets/destination4.png" alt="" />
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="card-info">
+                <h3>
+                  New York, USA
+                  <span><i class="fa-regular fa-star"></i> 5.0</span>
+                </h3>
+                <p>The Concrete Jungle</p>
+              </div>
+              <button class="custom-btn skyblue">
+                Explore <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="card active">
+              <div class="image">
+                <img src="../Assets/destination5.png" alt="" />
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="card-info">
+                <h3>
+                  Berlin, Germany
+                  <span><i class="fa-regular fa-star"></i> 4.6</span>
+                </h3>
+                <p>Industrial Nightlife Hub</p>
+              </div>
+              <button class="custom-btn skyblue">
+                Explore <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="../Assets/destination6.png" alt="" />
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="card-info">
+                <h3>
+                  Hong Kong
+                  <span><i class="fa-regular fa-star"></i> 4.9</span>
+                </h3>
+                <p>Vertical Neon Labyrinth</p>
+              </div>
+              <button class="custom-btn skyblue">
+                Explore <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="../Assets/destination7.png" alt="" />
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="card-info">
+                <h3>
+                  Dubai, UAE
+                  <span><i class="fa-regular fa-star"></i> 4.8</span>
+                </h3>
+                <p>Luxury High-Tech Oasis</p>
+              </div>
+              <button class="custom-btn skyblue">
+                Explore <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="card active">
+              <div class="image">
+                <img src="../Assets/destination8.png" alt="" />
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="card-info">
+                <h3>
+                  Singapore
+                  <span><i class="fa-regular fa-star"></i> 4.8</span>
+                </h3>
+                <p>Garden City of the Future</p>
+              </div>
+              <button class="custom-btn skyblue">
+                Explore <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+          <div class="load-more">
+            Load More Destinations
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- Footer -->
     <footer class="light-bg">
       <div class="container">
@@ -94,4 +249,13 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    const cardsParent = document.querySelector(".cards");
+    cardsParent.addEventListener("click", (e) => {
+      const card = e.target.closest(".fa-heart");
+      if (!card) return;
+      card.classList.toggle("active");
+    });
+  </script>
 </html>
