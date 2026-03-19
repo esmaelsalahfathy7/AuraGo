@@ -1,0 +1,110 @@
+form {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #3b3b3b;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+form div {
+  flex: 1;
+  text-align: start;
+}
+
+form div label {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+form div input {
+  width: 100%;
+  outline: none;
+  border: 1.5px solid;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+form div input:focus {
+  border-color: var(--secandary-color);
+}
+
+form label {
+  display: block;
+  color: var(--text-color);
+  margin: 20px 0;
+  text-align: start;
+}
+
+form .submit {
+  padding: 15px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: black;
+}
+
+.has-account div {
+  color: white;
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.has-account div p {
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.has-account div span {
+  flex: 1;
+  height: 1px;
+  background-color: #4c506d85;
+}
+
+.has-account div a {
+  padding: 20px;
+  flex: 1;
+  transition: 0.3s;
+  border: 1px solid;
+}
+
+.has-account div a:hover {
+  background-color: #4c506d;
+}
+
+.has-account .links a i {
+  transition: 0.3s;
+}
+
+.has-account .links a i.google {
+  color: #ea4335;
+}
+.has-account .links a i.facebook {
+  color: #1877f2;
+}
+
+.signup {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-color);
+  margin-top: 30px;
+}
+
+.signup a {
+  font-size: 18px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}

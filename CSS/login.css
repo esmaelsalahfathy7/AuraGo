@@ -1,22 +1,42 @@
+.light {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #026bd1;
+  filter: blur(120px);
+  top: 50%;
+  position: absolute;
+}
+
+.light.left {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.light.right {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+body {
+  background-color: #0a0f14;
+}
+
+header {
+  border-color: #1b2d3f;
+  background-color: transparent;
+}
+
+header nav a:hover {
+  color: var(--secandary-color) !important;
+}
+
 .content {
-  /* position: absolute; */
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 0;
-  top: 0;
   width: 100%;
-  height: 100vh;
-  z-index: -1;
-}
-.content img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  filter: brightness(0.3);
-  z-index: 0;
+  margin: 100px 0 40px;
 }
 
 .content .container {
@@ -25,9 +45,9 @@
   padding: 40px;
   max-width: 450px;
   text-align: center;
-  border-radius: 20px;
-  background-color: #0f0600a1;
-  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  background-color: #0e151c;
+  border: 1px solid #ffffff1a;
 }
 
 .content .container h1 {
@@ -41,127 +61,50 @@
   color: var(--text-color);
 }
 
-.content .container form {
-  display: flex;
-  flex-direction: column;
-  /* padding: 20px 0; */
-  border-bottom: 1px solid #3b3b3b;
+footer a:hover {
+  color: var(--secandary-color) !important;
 }
-
-.content .container form div {
-  flex: 1;
-  text-align: start;
-  margin-top: 15px;
-}
-
-.content .container form div p {
-  color: var(--main-color);
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
-  letter-spacing: 2px;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.content .container form div p a {
-  color: var(--text-color);
-  transition: 0.3s;
-}
-
-.content .container form div p a:hover {
-  color: var(--secandary-color);
-}
-
-.content .container form div input {
-  width: 100%;
-  background-color: var(--bg-color-2);
-  outline: none;
-  border: 1px solid #3f3f3f;
-  padding: 15px;
+/* Styling Form For The Log-In Page */
+form div label {
   color: white;
-  border-radius: 8px;
-  font-size: 14px;
+}
+
+form div label a {
+  color: var(--secandary-color);
   transition: 0.3s;
 }
 
-.content .container form div input:focus {
+form div label a:hover {
+  text-decoration: underline;
+}
+
+form .submit {
+  background-color: var(--secandary-color);
+}
+
+form .submit:hover {
+  background-color: #02b9cd;
+}
+
+form div input {
+  background-color: #0f1623;
+  border-color: #ffffff1a;
+}
+
+form div input:focus {
   border-color: var(--secandary-color);
 }
 
-.content .container form label {
-  display: block;
-  color: var(--text-color);
-  margin: 20px 0;
-  text-align: start;
+.has-account div a {
+  border-color: #334155;
+  background-color: #1e293b80;
+  transition: 0.2s;
 }
 
-.content .container form button {
-  padding: 20px;
-  font-size: 20px;
-  letter-spacing: 2px;
+.has-account div a:hover {
+  background-color: #1e293b;
 }
 
-.content .container .has-account div {
-  color: white;
-  margin: 15px 0;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.content .container .has-account div p {
-  margin: 10px 0;
-}
-
-.content .container .has-account div span {
-  flex: 1;
-  height: 1px;
-  background-color: #4c506d85;
-}
-
-.content .container .has-account div a {
-  background-color: #4c506d85;
-  padding: 20px;
-  flex: 1;
-  transition: 0.3s;
-}
-
-.content .container .has-account div a:hover {
-  background-color: #4c506d;
-}
-
-.content .container .has-account .links a i {
-  transition: 0.3s;
-}
-
-.content .container .has-account .links a:hover i.google {
-  color: #ea4335;
-}
-.content .container .has-account .links a:hover i.facebook {
-  color: #1877f2;
-}
-
-.content .container .signup {
-  text-align: center;
-  font-size: 14px;
-  color: var(--text-color);
-}
-
-.content .container .signup a {
-  color: var(--main-color);
-  font-size: 18px;
-  margin-left: 10px;
-  transition: 0.3s;
-}
-
-.content .container .signup a:hover {
+.signup a {
   color: var(--secandary-color);
-}
-
-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
 }

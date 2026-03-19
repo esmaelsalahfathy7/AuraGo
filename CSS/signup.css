@@ -1,0 +1,87 @@
+.light {
+  width: 200px;
+  height: 200px;
+  opacity: 0.5;
+  filter: blur(62px);
+  background-color: #492912;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.light.top {
+  left: 40px;
+  top: 40px;
+}
+
+.light.bottom {
+  bottom: 40px;
+  right: 40px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.content .container {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  max-width: 550px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #0f0600a1;
+  border: 1px solid var(--main-color);
+}
+
+.content .container h1 {
+  color: white;
+  margin: 0;
+}
+
+.content .container > p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+/* Styling Form For The Sign-Up Page */
+form div label {
+  color: var(--main-color);
+}
+
+form .submit {
+  background-color: #39ff14;
+  box-shadow: 0px 0px 10px 0px #37ff14b6;
+}
+
+form .submit:hover {
+  box-shadow: 0px 0px 25px 0px #37ff14b6;
+}
+
+form div input {
+  background-color: var(--bg-color-2);
+  border-color: #cc550033;
+}
+
+form div input:focus {
+  border-color: var(--main-color);
+}
+
+.has-account div a {
+  border-color: #cc550033;
+  background-color: var(--bg-primary);
+  transition: 0.2s;
+}
+
+.has-account div a:hover {
+  border-color: var(--main-color);
+  background-color: #cc55004a;
+}
+.signup a {
+  color: var(--main-color);
+}

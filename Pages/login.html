@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AuraGo</title>
     <link rel="stylesheet" href="../CSS/commonStyles.css" />
+    <link rel="stylesheet" href="../CSS/formStyle.css" />
     <link rel="stylesheet" href="../CSS/login.css" />
     <link rel="stylesheet" href="../CSS/Normalize.css" />
     <link
@@ -36,29 +37,30 @@
           </ul>
         </nav>
         <div>
-          <a class="custom-btn orange" href="./signup.html">Register</a>
+          <a class="custom-btn skyblue" href="./signup.html">Register</a>
         </div>
       </div>
     </header>
     <div class="content">
-      <img src="../Assets/landing.jpg" alt="" />
+      <div class="light left"></div>
+      <div class="light right"></div>
       <div class="container">
-        <h1>Member Login</h1>
-        <p>Secure access to the travel network</p>
+        <h1>Welcome Back</h1>
+        <p>Access your AuraGo travel dashboard</p>
         <form>
           <div>
-            <p>UserName</p>
-            <input type="text" placeholder="abc@example.com" />
+            <label>UserName</label>
+            <input type="text" placeholder="example123" />
           </div>
           <div>
-            <p>Password <a href="">Forget? </a></p>
+            <label>Password <a href="resetpassword.html">Forget? </a></label>
             <input placeholder="••••••••" type="password" />
           </div>
           <label>
             <input type="checkbox" name="remember" />
             Remember Me?
           </label>
-          <button type="submit" class="custom-btn skyblue">
+          <button type="submit" class="custom-btn submit">
             Initialize Login
           </button>
         </form>
@@ -73,7 +75,7 @@
               ><i class="fa-brands fa-google google"></i> Google</a
             >
             <a class="custom-btn" href=""
-              ><i class="fa-brands fa-facebook-f facebook"></i> FaceBook</a
+              ><i class="fa-brands fa-facebook facebook"></i> FaceBook</a
             >
           </div>
         </div>
