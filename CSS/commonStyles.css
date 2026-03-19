@@ -7,7 +7,7 @@
 :root {
   --main-color: #cc5500;
   --dark-orange-color: #522301;
-  --secandary-color: #00d2ff;
+  --secandary-color: #00f2ff;
   --text-color: #64748b;
   --bg-primary: rgb(204 85 0 / 0.05);
 }
@@ -150,6 +150,16 @@ a {
 }
 
 /* --Buttons-- */
+
+/* Lights */
+.light {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  filter: blur(120px);
+  position: absolute;
+}
+/* --Lights-- */
 
 /* --******\\\\\\ All Components //////******-- */
 

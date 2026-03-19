@@ -1,11 +1,6 @@
 .light {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
   background-color: #026bd1;
-  filter: blur(120px);
   top: 50%;
-  position: absolute;
 }
 
 .light.left {
