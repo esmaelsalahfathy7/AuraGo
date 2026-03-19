@@ -292,8 +292,13 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 20px;
   border-radius: 20px;
+}
+
+@media (max-width: 992px) {
+  .tours .container .cards .card {
+    flex-direction: column;
+  }
 }
 
 .tours .container .cards .card .image {
@@ -308,6 +313,12 @@
 
 .tours .container .cards .card .card-info {
   flex: 2;
+}
+
+@media (max-width: 992px) {
+  .tours .container .cards .card .card-info {
+    flex: 0;
+  }
 }
 
 .tours .container .cards .card .card-info h3 {
