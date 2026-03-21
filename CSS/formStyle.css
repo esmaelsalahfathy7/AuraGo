@@ -1,34 +1,99 @@
+.content {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content > .container {
+  padding: 40px;
+  max-width: 450px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #0e151c;
+  border: 1px solid #ffffff1a;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content .head {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content .head i {
+  font-size: 80px;
+  color: var(--secandary-color);
+  text-shadow: 0 0 10px var(--secandary-color);
+}
+
+.content .head div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.content .container h1 {
+  color: white;
+  margin: 0;
+  font-size: 29px;
+}
+
+.content .container .head p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-color);
+  max-width: 300px;
+}
+
 form {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #3b3b3b;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 20px;
 }
 
-form div {
-  flex: 1;
-  text-align: start;
-}
-
-form div label {
+form > div {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  letter-spacing: 1.5px;
-  font-size: 14px;
-  font-weight: 300;
+  flex-direction: column;
+  text-align: start;
+  gap: 10px;
 }
 
-form div input {
+form label {
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  position: relative;
+}
+
+form .field {
+  position: relative;
+}
+
+form .field i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: #64748b;
+  transform: translateY(-50%);
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+form .field input {
   width: 100%;
   outline: none;
   border: 1.5px solid;
-  padding: 20px 15px;
+  padding: 20px 15px 20px 40px;
+  border-radius: 15px;
   color: white;
-  border-radius: 10px;
-  font-size: 16px;
+  font-size: 15px;
   transition: 0.3s;
 }
 
@@ -36,75 +101,52 @@ form div input:focus {
   border-color: var(--secandary-color);
 }
 
-form label {
-  display: block;
-  color: var(--text-color);
-  margin: 20px 0;
-  text-align: start;
-}
-
 form .submit {
   padding: 20px;
-  letter-spacing: 1.5px;
-  font-weight: 600;
-  color: black;
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
 }
 
 .has-account div {
   color: white;
-  margin: 15px 0;
   display: flex;
-  gap: 10px;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
 }
 
-.has-account div p {
+.has-account .links {
+  margin-top: 15px;
+}
+
+.has-account p {
   margin: 10px 0;
   text-transform: uppercase;
 }
 
-.has-account div span {
+.has-account span {
   flex: 1;
   height: 1px;
   background-color: #4c506d85;
 }
 
-.has-account div a {
-  padding: 20px;
+.has-account a {
+  padding: 20px 15px;
   flex: 1;
+  border: 1px solid #334155;
+  background-color: #1e293b80;
+}
+
+.has-account a:hover {
+  background-color: #1e293b;
+}
+
+.has-account i {
   transition: 0.3s;
-  border: 1px solid;
 }
 
-.has-account div a:hover {
-  background-color: #4c506d;
-}
-
-.has-account .links a i {
-  transition: 0.3s;
-}
-
-.has-account .links a i.google {
+.has-account i.google {
   color: #ea4335;
 }
-.has-account .links a i.facebook {
+
+.has-account i.facebook {
   color: #1877f2;
-}
-
-.signup {
-  text-align: center;
-  font-size: 14px;
-  color: var(--text-color);
-  margin-top: 30px;
-}
-
-.signup a {
-  font-size: 18px;
-  margin-left: 10px;
-  transition: 0.3s;
-}
-
-.signup a:hover {
-  text-decoration: underline;
 }

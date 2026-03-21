@@ -45,22 +45,36 @@
       <div class="light left"></div>
       <div class="light right"></div>
       <div class="container">
-        <h1>Welcome Back</h1>
-        <p>Access your AuraGo travel dashboard</p>
+        <div class="head">
+          <i class="fa-solid fa-key"></i>
+          <div>
+            <h1>Welcome Back</h1>
+            <p>Access your AuraGo travel dashboard</p>
+          </div>
+        </div>
         <form>
           <div>
-            <label>UserName</label>
-            <input type="text" placeholder="example123" />
+            <label>Email Address</label>
+            <div class="field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="text" placeholder="example123@aurago.com" />
+            </div>
           </div>
           <div>
-            <label>Password <a href="resetpassword.html">Forget? </a></label>
-            <input placeholder="••••••••" type="password" />
+            <label
+              >Password
+              <a class="forget" href="resetpassword.html">Forget? </a></label
+            >
+            <div class="field">
+              <i class="fa-solid fa-lock"></i>
+              <input placeholder="••••••••" type="password" />
+            </div>
           </div>
-          <label>
+          <label class="remmber">
             <input type="checkbox" name="remember" />
             Remember Me?
           </label>
-          <button type="submit" class="custom-btn submit">
+          <button type="submit" class="custom-btn skyblue submit">
             Initialize Login
           </button>
         </form>
@@ -83,23 +97,23 @@
           Don`t Have An Account? <a href="./signup.html"> Join Network</a>
         </div>
       </div>
-    </div>
-    <!-- Footer -->
-    <footer class="light-bg">
-      <div class="container">
-        <div class="copyright style-2">
-          <a class="home" href="../index.html">AuraGo</a>
-          <div>
-            <a href=""><i class="fas fa-solid fa-globe"></i></a>
-            <a href=""><i class="fas fa-regular fa-credit-card"></i></a>
-            <a href=""><i class="fas fa-solid fa-shield-halved"></i></a>
-          </div>
-          <div>
-            <a href="">Privacy Policy</a>
-            <a href="">Terms of Service</a>
+      <footer class="light-bg">
+        <div class="container">
+          <div class="copyright style-2">
+            <a class="home" href="../index.html">AuraGo</a>
+            <div>
+              <a href=""><i class="fas fa-solid fa-globe"></i></a>
+              <a href=""><i class="fas fa-regular fa-credit-card"></i></a>
+              <a href=""><i class="fas fa-solid fa-shield-halved"></i></a>
+            </div>
+            <div>
+              <a href="">Privacy Policy</a>
+              <a href="">Terms of Service</a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <!-- Footer -->
   </body>
 </html>

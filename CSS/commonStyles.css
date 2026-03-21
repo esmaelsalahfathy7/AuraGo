@@ -124,6 +124,7 @@ a {
   padding: 10px 15px;
   cursor: pointer;
   transition: 0.3s;
+  letter-spacing: 1.5px;
 }
 
 .orange {
@@ -144,7 +145,7 @@ a {
 }
 
 .skyblue:hover {
-  transform: scale(1.08);
+  transform: scale(1.03);
 }
 
 /* --Buttons-- */
