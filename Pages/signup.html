@@ -24,9 +24,7 @@
 
     <header>
       <div class="container">
-        <div class="logo">
-          <a href="">AuraGo</a>
-        </div>
+        <div class="logo">AuraGo</div>
         <nav>
           <ul>
             <li><a href="../index.html">Home</a></li>
@@ -62,21 +60,21 @@
             <label>Full Name</label>
             <div class="field">
               <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="Example One" />
+              <input name="fullName" type="text" placeholder="Example One" />
             </div>
           </div>
           <div>
             <label>Email Address</label>
             <div class="field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="text" placeholder="abc@example.com" />
+              <input name="email" type="text" placeholder="abc@example.com" />
             </div>
           </div>
           <div>
             <label>Password</label>
             <div class="field">
               <i class="fa-solid fa-lock"></i>
-              <input placeholder="••••••••" type="password" />
+              <input name="password" placeholder="••••••••" type="password" />
             </div>
           </div>
           <div>
@@ -86,8 +84,8 @@
               <input placeholder="••••••••" type="password" />
             </div>
           </div>
-          <button type="submit" class="custom-btn skyblue submit">
-            Initialize Login
+          <button type="submit" class="custom-btn green submit">
+            Sign Up Now
           </button>
         </form>
         <div class="has-account">
@@ -109,6 +107,7 @@
           Already have an account? <a href="./login.html"> Log In</a>
         </div>
       </div>
+      <!-- Footer -->
       <footer class="light-bg">
         <div class="container">
           <div class="copyright style-2">
@@ -126,6 +125,14 @@
         </div>
       </footer>
     </div>
-    <!-- Footer -->
   </body>
+  <script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries()); // تحويلها لكائن JS
+      window.alert(`New User Info Sent To Create Account: ${data.email}`);
+    });
+  </script>
 </html>

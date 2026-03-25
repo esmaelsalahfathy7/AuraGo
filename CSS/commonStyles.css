@@ -125,27 +125,38 @@ a {
   cursor: pointer;
   transition: 0.3s;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
-.orange {
+.custom-btn.orange {
   background-color: var(--main-color);
   box-shadow: 0 0 7px var(--main-color);
   font-weight: 500;
 }
 
-.orange:hover {
+.custom-btn.orange:hover {
   background-color: var(--dark-orange-color);
 }
 
-.skyblue {
+.custom-btn.skyblue {
   color: black !important;
   background-color: var(--secandary-color);
-  text-transform: uppercase;
   font-weight: 600;
 }
 
-.skyblue:hover {
+.custom-btn.skyblue:hover {
   transform: scale(1.03);
+}
+
+.custom-btn.green {
+  font-weight: 600;
+  background-color: #39ff14;
+  color: black;
+  box-shadow: 0px 0px 10px 0px #37ff14b6;
+}
+
+.custom-btn.green:hover {
+  box-shadow: 0px 0px 25px 0px #37ff14b6;
 }
 
 /* --Buttons-- */
@@ -159,6 +170,47 @@ a {
   position: absolute;
 }
 /* --Lights-- */
+
+/*  */
+
+.boarding {
+  color: var(--main-color);
+  background-color: #a2430021;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: fit-content;
+  font-weight: 500;
+  border: 1px solid #a2440045;
+  text-transform: uppercase;
+}
+
+.boarding > span {
+  display: inline-flex;
+  position: relative;
+}
+
+.boarding > span span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+
+.boarding > span span:last-of-type {
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: flashing 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  opacity: 0.75;
+}
+@keyframes flashing {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+/*  */
 
 /* --******\\\\\\ All Components //////******-- */
 
@@ -179,8 +231,8 @@ header .container {
   justify-content: space-between;
 }
 
-header .container .logo a {
-  font-size: 36px;
+header .container .logo {
+  font-size: 25px;
   font-weight: 600;
   color: white;
 }
@@ -230,6 +282,7 @@ footer .container .content {
   color: var(--text-color);
   gap: 15px;
   padding: 40px 0;
+  border-bottom: 1px solid;
 }
 
 @media (max-width: 768px) {

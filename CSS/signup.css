@@ -37,15 +37,6 @@ form .field input {
   border-color: #cc550033;
 }
 
-form .submit {
-  background-color: #39ff14;
-  box-shadow: 0px 0px 10px 0px #37ff14b6;
-}
-
-form .submit:hover {
-  box-shadow: 0px 0px 25px 0px #37ff14b6;
-}
-
 .has-account a {
   border-color: #cc550033;
   background-color: var(--bg-primary);
