@@ -1,6 +1,7 @@
 .light {
-  background-color: #026bd1;
+  background-color: #022a51;
   top: 50%;
+  filter: blur(140px);
 }
 
 .light.left {

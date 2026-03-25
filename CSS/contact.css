@@ -42,9 +42,6 @@ main .container > div > p {
   max-width: 450px;
 }
 
-main .container > div {
-}
-
 .contacts > div {
   display: flex;
   align-items: center;

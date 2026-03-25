@@ -146,6 +146,7 @@ a {
 
 .custom-btn.skyblue:hover {
   transform: scale(1.03);
+  box-shadow: 0px 0px 10px 0px var(--secandary-color);
 }
 
 .custom-btn.green {
@@ -163,10 +164,10 @@ a {
 
 /* Lights */
 .light {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  filter: blur(120px);
+  filter: blur(200px);
   position: absolute;
 }
 /* --Lights-- */
