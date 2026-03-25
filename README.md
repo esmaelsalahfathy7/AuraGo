@@ -21,4 +21,4 @@
 3. او من خلال الرابط التالي ( https://esmaelsalahfathy7.github.io/AuraGo/ )
 
 ---
-Developed with ❤️ by [Esmael Salah]
+Developed by [Esmael Salah]
