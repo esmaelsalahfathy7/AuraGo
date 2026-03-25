@@ -183,6 +183,9 @@ a {
   font-weight: 500;
   border: 1px solid #a2440045;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .boarding > span {
